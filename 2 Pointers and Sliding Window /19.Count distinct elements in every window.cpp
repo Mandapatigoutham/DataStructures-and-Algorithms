@@ -13,12 +13,9 @@ class Solution{
         if (j - i + 1 == k)
         {
             ans.push_back(mp.size());
-            if(mp.find(arr[i])!=mp.end())
-            {
                 mp[arr[i]]--;
                 if(mp[arr[i]]==0)
                 mp.erase(arr[i]);
-            }
             i++;
         }
         j++;
